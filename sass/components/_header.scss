@@ -1,0 +1,18 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: $background-color;
+  height: 50px;
+
+  @media screen and (min-width: 480px) {
+    height: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}

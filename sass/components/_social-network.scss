@@ -1,0 +1,33 @@
+.social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.social-network__item {
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-network__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  transition: background-color 250ms $cubic, fill 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $background-color;
+  }
+}
