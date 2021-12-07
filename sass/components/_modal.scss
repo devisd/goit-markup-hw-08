@@ -42,20 +42,28 @@
 }
 
 .modal-form {
-  padding: 40px;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    padding: 40px;
+  }
 }
 
 .modal-form__title {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
+
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+  }
 }
 
 .form-group {
@@ -103,7 +111,11 @@
 .comment-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
 }
 
 .comment-group__label {
@@ -139,7 +151,11 @@
 }
 
 .checkbox-form {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
 }
 
 .checkbox-form__label {
